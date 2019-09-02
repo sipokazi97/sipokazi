@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Group details</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet2.css">
+</head>
+<body>
+	<div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="#home">Group</a>
+      <a href="page2.html">About me</a>
+    </div>
+	<main>
+		<div class="ligning">
+		<h1>GROUP3 DETAILS</h1><br>
+
+	    <h3><u>Welcome to <i>Group3</i></u></h3>
+		<p>Group members links to the wesites are available here</p>
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+			<ul id="myUL">
+                <li><a href="#about">Makeleni Sipokazi</a></li>
+                <li><a href="#services">Platjie Zizipho</a></li>
+                <li><a href="#clients">Timothy Viriri</a></li>
+                <li><a href="#contact">Lizwi Macikinca</a></li>
+                <li><a href="#contact">Sinethemba Mpehla</a></li>
+            </ul>
+        <script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+<h3><b>
+<u>About the proposed team project</u></b></h3>
+<P>As a group we are going to create our school's online voting system where by students dont need to queue for a long time</P>
+<p>Here is what it is going to  be like: The system is going to have a page where poeple are  going to register on. Each person who wish to  vote  will first create an account so that their information will be store on the database so that in future when the time come for voting each person will sign in to his or her account and vote</p>
+<p>Each person won't vote more than once and each person will have to have a secrete pin so that no one will vote for someone else without them knowing</p><p>The system will aoutomatically count votes for each of the parties</p><p> Voting will be easy and fast.Also the number of people participating in voting will be more higher than past years.</p><p>Hopefully this system will excite everyone. As a group we are happy to develop this system</p>
+<p></p>
+        </div>
+
+	</main>
+	<footer>
+		<p>&copy;copyright 2019 Spoky</p>
+	</footer>
+</body>
+</html> 

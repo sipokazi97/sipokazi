@@ -1,0 +1,75 @@
+main {
+	border: 5px solid black;
+	padding: 1em;
+}
+h1 {
+	font-family:Arial, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+body {
+  background-color:  grey;
+}
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  
+}
+* {box-sizing: border-box}
+@media screen and (max-width: 500px) {
+  .topnav a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
